@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>上传文件</title>
+    <script src="../js/jquery-1.12.4.js" type="application/javascript"></script>
+    <script src="../js/updateUp.js" type="application/javascript"></script>
+</head>
+<style>
+    a{
+        text-decoration: none;
+        color:white;
+        display: block;
+        border: 1px blue solid;
+        width: 35px;
+        border-radius: 10px;
+        padding: 5px;
+        background:blue;
+    }
+    a:hover{
+        background-color:aliceblue ;
+        color: blue;
+    }
+    a:active{
+        background-color: red;
+        color: white;
+    }
+    input[type=file]{
+        border-radius: 1px;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <td>选择上传的图片</td>
+            <td><input type="file" id="file"/></td>
+        </tr>
+        <tr>
+            <td>描述</td>
+            <td><input type="text" id="dec"/></td>
+        </tr>
+        <tr>
+            <td><a href="javascript:void(0);" onclick="up()" >提交</a></td>
+            <td><a href="http://localhost:8080">返回</a></td>
+        </tr>
+    </table>
+</body>
+</html>
